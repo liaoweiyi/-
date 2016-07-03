@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50F7F2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:text="提醒："
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/clock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:text="内容："
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/clock_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="30dp"
+            android:text="完成" />
+
+        <Button
+            android:id="@+id/shelve"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="搁置" />
+    </RelativeLayout>
+
+</LinearLayout>

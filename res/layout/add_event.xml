@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a2"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="请指定时间..."
+            android:textColor="#0C10D6"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/set_clock"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/read" />
+
+        <Button
+            android:id="@+id/set_place"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/place2" />
+
+        <Button
+            android:id="@+id/set_weather"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/sun" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFE339" />
+
+    <EditText
+        android:id="@+id/content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:hint="记点什么..."
+        android:textSize="20sp" />
+
+</LinearLayout>
